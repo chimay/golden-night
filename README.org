@@ -1,0 +1,4 @@
+
+#+STARTUP: showall
+
+Various minimalist themes for various apps
