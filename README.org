@@ -1,6 +1,10 @@
 
 #+STARTUP: showall
 
+* Warning
+
+I try to be mindful when I code, but some bugs might remain, so be careful.
+
 * Themes
 
 Various minimalist themes for various apps.
