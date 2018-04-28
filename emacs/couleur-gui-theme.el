@@ -88,28 +88,28 @@
 ;; * Modeline
 
 	'(mode-line ((t (
-		:background "#070707" :foreground "#5B3C11"
+		:background nil :foreground nil :inverse-video t
 		:box '(:line-width -1 :style released-button)
 		:height 1.0
 	))))
 
 	'(mode-line-buffer-id ((t (
-		:background "black" :foreground "#5B3C11"
+		:background "#070707" :foreground nil
 		:bold t :weight bold :height 0.9
 	))))
 
-	'(mode-line-inactive ((t (:foreground "#5B3C11" :background "black"))))
+	'(mode-line-inactive ((t (:foreground nil :background "#070707"))))
 
 	'(mode-line-emphasis ((t (:bold t :weight bold))))
 
 	'(mode-line-highlight ((t (
-		:box (:line-width 2 :color "#5B3C11"
+		:box (:line-width 2 :color nil
 		:style released-button :height 0.9
 	)))))
 
 	'(mode-line-inactive ((t (
-		:background "black" :foreground "#5B3C11"
-		:box '(:line-width -1 :color "#5B3C11")
+		:background "#070707" :foreground nil
+		:box '(:line-width -1 :color nil)
 		:weight light :height 0.9
 	))))
 
