@@ -95,7 +95,7 @@
 
 	'(mode-line-buffer-id ((t (
 		:background "#070707" :foreground nil
-		:bold t :weight bold :height 0.9
+		:bold t :height 1.0
 	))))
 
 	'(mode-line-inactive ((t (:foreground nil :background "#070707"))))
