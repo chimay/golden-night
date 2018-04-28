@@ -82,17 +82,17 @@
 ;; * Modeline
 
 	'(mode-line ((t (
-		:background "color-232" :foreground nil
+		:background nil :foreground nil :inverse-video t
 		:box '(:line-width -1 :style released-button)
 		:height 1.0
 	))))
 
 	'(mode-line-buffer-id ((t (
-		:background nil :foreground nil
+		:background "#070707" :foreground nil
 		:bold t :weight bold :height 0.9
 	))))
 
-	'(mode-line-inactive ((t (:foreground nil :background nil))))
+	'(mode-line-inactive ((t (:foreground nil :background "#070707"))))
 
 	'(mode-line-emphasis ((t (:bold t :weight bold))))
 
@@ -304,10 +304,10 @@
 
 ;; * Helm
 
-	'(helm-source-header ((t (:bold t :height 1.2 :background "color-232" :foreground nil))))
+	'(helm-source-header ((t (:bold t :height 1.2 :background "#070707" :foreground nil))))
 
-	'(helm-selection ((t (:underline nil :bold t :background nil :foreground nil))))
-	'(helm-selection-line ((t (:underline nil :bold t :background nil :foreground nil))))
+	'(helm-selection ((t (:underline nil :bold t :background "#070707" :foreground nil))))
+	'(helm-selection-line ((t (:underline nil :bold t :background "#070707" :foreground nil))))
 
 	'(helm-match ((t (:bold nil :background nil :foreground nil))))
 	'(helm-grep-match ((t (:bold nil :background nil :foreground nil))))
