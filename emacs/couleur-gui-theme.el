@@ -88,7 +88,7 @@
 ;; * Modeline
 
 	'(mode-line ((t (
-		:background nil :foreground nil :inverse-video t
+		:background nil :foreground nil :inverse-video t :bold t
 		:box '(:line-width -1 :style released-button)
 		:height 1.0
 	))))
