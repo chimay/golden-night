@@ -31,6 +31,8 @@ let g:colors_name = "personnel"
 hi Normal			guifg=#5B3C11		guibg=black			gui=NONE
 hi Visual			guifg=black			guibg=#5B3C11		gui=NONE
 
+hi Underlined		guifg=#5B3C11		guibg=black			gui=underline
+
 hi Comment			guifg=#754321		guibg=black			gui=italic
 hi Delimiter		guifg=#5B3C11		guibg=black			gui=NONE
 hi Constant     	guifg=#872E30		guibg=NONE			gui=NONE
@@ -63,15 +65,15 @@ hi ErrorMsg			guifg=darkred		guibg=black			gui=undercurl
 
 " {{{ Curseur
 
-" hi Cursor			guifg=#5B3C11		guibg=NONE		gui=NONE
-" hi TermCursor		guifg=#5B3C11		guibg=NONE		gui=NONE
-" hi TermCursorNC		guifg=#5B3C11		guibg=NONE		gui=NONE
-" hi iCursor			guifg=#5B3C11		guibg=NONE		gui=NONE
-" hi vCursor			guifg=#5B3C11		guibg=#4E1609	gui=NONE
-" 
-" hi CursorLineNr		guifg=#5B3C11		guibg=NONE			gui=NONE
-" hi CursorLine		guifg=NONE			guibg=#120507		gui=NONE
-" hi CursorColumn		guifg=NONE			guibg=#120507		gui=NONE
+hi Cursor			guifg=#5B3C11		guibg=NONE		gui=NONE
+hi TermCursor		guifg=#5B3C11		guibg=NONE		gui=NONE
+hi TermCursorNC		guifg=#754321		guibg=NONE		gui=NONE
+hi iCursor			guifg=#5B3C11		guibg=NONE		gui=NONE
+hi vCursor			guifg=#5B3C11		guibg=#4E1609	gui=NONE
+
+hi CursorLineNr		guifg=#5B3C11		guibg=NONE			gui=NONE
+hi CursorLine		guifg=NONE			guibg=#120507		gui=NONE
+hi CursorColumn		guifg=NONE			guibg=#120507		gui=NONE
 
 " }}}
 
@@ -94,7 +96,7 @@ hi TabLineFill		guifg=NONE		guibg=#151515		gui=NONE
 " }}}
 
 " {{{ Menu de complétion en mode insertion
-
+al
 hi Pmenu			guifg=#88421D		guibg=#070707		gui=NONE
 hi PmenuSbar		guifg=#88421D		guibg=#070707		gui=NONE
 hi PmenuSel			guifg=black			guibg=#5B3C11		gui=bold
@@ -119,7 +121,7 @@ hi FoldColumn		guifg=#5B3C11		guibg=black			gui=NONE
 
 " {{{ Recherche
 
-hi Search			guifg=black			guibg=#5B3C11	gui=underline
+hi Search			guifg=black			guibg=#5B3C11	gui=NONE
 
 " }}}
 
@@ -236,7 +238,7 @@ hi Constant     	ctermfg=NONE		ctermbg=NONE		cterm=NONE
 hi Delimiter		ctermfg=NONE		ctermbg=NONE		cterm=NONE
 hi Number			ctermfg=NONE		ctermbg=NONE		cterm=NONE
 
-hi Conceal			ctermfg=NONE		ctermbg=black		cterm=NONE
+hi Conceal			ctermfg=NONE		ctermbg=NONE		cterm=NONE
 
 hi LineNr			ctermfg=NONE		ctermbg=NONE		cterm=NONE
 hi CursorLineNr		ctermfg=NONE		ctermbg=NONE		cterm=NONE
@@ -250,8 +252,8 @@ hi Macro			ctermfg=NONE		ctermbg=NONE		cterm=NONE
 
 " {{{ More prompt
 
-hi MoreMsg			ctermfg=brown		ctermbg=black			cterm=NONE
-hi Question			ctermfg=brown		ctermbg=black			cterm=NONE
+hi MoreMsg			ctermfg=brown		ctermbg=NONE			cterm=NONE
+hi Question			ctermfg=brown		ctermbg=NONE			cterm=NONE
 
 " }}}
 
@@ -308,8 +310,9 @@ hi WildMenu		ctermfg=NONE			ctermbg=NONE		cterm=NONE
 
 " {{{ Pliage
 
-hi Folded			ctermfg=NONE		ctermbg=black			cterm=italic
-hi FoldColumn		ctermfg=NONE		ctermbg=black			cterm=NONE
+hi Folded			ctermfg=NONE		ctermbg=NONE			cterm=italic
+hi FoldColumn		ctermfg=NONE		ctermbg=NONE			cterm=NONE
+
 "hi Folded			ctermfg=black			ctermbg=NONE		cterm=italic
 "hi FoldColumn		ctermfg=black			ctermbg=NONE		cterm=NONE
 
