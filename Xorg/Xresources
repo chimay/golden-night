@@ -1,0 +1,14 @@
+! vim: set filetype=xdefaults:
+
+! Pour prendre les modifications en compte :
+!
+! xrdb ~/.Xresources
+!
+! Pour afficher les options activées :
+!
+! xrdb -query -all
+
+#include ".Xresources.d/main"
+
+#include ".Xresources.d/rofi"
+#include ".Xresources.d/rxvt-unicode"
