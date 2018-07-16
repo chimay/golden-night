@@ -10,7 +10,7 @@ from ranger.gui.color import (
     default_colors,
 )
 
-class Personnel(ColorScheme):
+class Ornuit(ColorScheme):
     progress_bar_color = normal
 
     def use(self, context):  # pylint: disable=too-many-branches,too-many-statements
@@ -25,7 +25,8 @@ class Personnel(ColorScheme):
             else:
                 attr = normal
             if context.empty or context.error:
-                bg = red
+                fg = red
+                # bg = red
             if context.border:
                 fg = default
             if context.media:
@@ -34,7 +35,8 @@ class Personnel(ColorScheme):
                 else:
                     fg = magenta
             if context.container:
-                fg = red
+                fg = yellow
+                # fg = red
             if context.directory:
                 attr |= bold
                 # attr |= normal
@@ -52,7 +54,8 @@ class Personnel(ColorScheme):
                 if context.device:
                     attr |= bold
             if context.link:
-                fg = cyan if context.good else magenta
+                # fg = cyan if context.good else magenta
+                fg = default
             if context.tag_marker and not context.selected:
                 # attr |= bold
                 if fg in (red, magenta):

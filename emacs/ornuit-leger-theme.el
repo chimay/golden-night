@@ -7,9 +7,9 @@
 ;	M-x list-colors-display
 ; pour afficher les couleurs disponibles
 
-(deftheme couleur-leger "Thème couleur sombre, version terminal, léger.")
+(deftheme ornuit-leger "Thème couleur sombre, version terminal, léger.")
 
-(custom-theme-set-faces 'couleur-leger
+(custom-theme-set-faces 'ornuit-leger
 
 ;; * Base
 
@@ -360,4 +360,4 @@
 
 )
 
-(provide-theme 'couleur-leger)
+(provide-theme 'ornuit-leger)

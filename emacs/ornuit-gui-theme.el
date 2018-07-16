@@ -7,9 +7,9 @@
 ;	M-x list-colors-display
 ; pour afficher les couleurs disponibles
 
-(deftheme couleur-gui "Thème couleur sombre, version gui.")
+(deftheme ornuit-gui "Thème couleur sombre, version gui.")
 
-(custom-theme-set-faces 'couleur-gui
+(custom-theme-set-faces 'ornuit-gui
 
 ;; * Base
 
@@ -466,6 +466,19 @@
 	'(elscreen-tab-current-screen-face ((t (:background "black" :foreground "#5B3C11"))))
 	'(elscreen-tab-other-screen-face ((t (:background "black" :foreground "#5B3C11"))))
 
+;; * Company
+
+	'(company-scrollbar-fg ((t (:background "black" :foreground "#5B3C11"))))
+	'(company-scrollbar-bg ((t (:background "black" :foreground "#5B3C11"))))
+	'(company-template-field ((t (:background "black" :foreground "#5B3C11"))))
+	'(company-tooltip ((t (:background "black" :foreground "#5B3C11"))))
+	'(company-tooltip-selection ((t (:background "#5b3c11" :foreground "black"))))
+	'(company-tooltip-common ((t (:background "black" :foreground "#5B3C11"))))
+	'(company-tooltip-common-selection ((t (:background "black" :foreground "#5B3C11"))))
+	'(company-preview ((t (:background "black" :foreground "#5B3C11"))))
+	'(company-preview-common ((t (:background "#5b3c11" :foreground "black"))))
+	'(company-preview-search ((t (:background "black" :foreground "#5B3C11"))))
+
 ;; Easy Gnupg Assistant
 
 	'(epa-field-body ((t (:background "black" :foreground "#5B3C11"))))
@@ -480,4 +493,4 @@
 )
 
 
-(provide-theme 'couleur-gui)
+(provide-theme 'ornuit-gui)
