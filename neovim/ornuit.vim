@@ -1,6 +1,6 @@
 " vim: set filetype=vim :
 
-" Réglages de base {{{2
+" Réglages de base {{{1
 
 set background=dark
 
@@ -14,23 +14,29 @@ let g:colors_name = "ornuit"
 
 " }}}1
 
-" Couleurs intéressantes {{{2
+" Couleurs intéressantes {{{1
 
-" #5B3C11  5B3C11 606060  872E30 5B3C11  872E30  5B3C11 5B3C11  5B3C11 5B3C11  872E30
-" #5B3C11  5B3C11 5B3C11  5B3C11 404040  404040  5B3C11 88421D  872E30 606060  872E30
-" #872E30  872E30 872E30  872E30 845A3B  5B3C11  5B3C11 5B3C11  5B3C11 872E30  606060
-" #5B3C11  5B3C11 434343  872E30 872E30  5B3C11  5B3C11 5B3C11  5B3C11 5B3C11  120507
+" #5B3C11
+" #341207
+
+" #872E30
+" #88421D
+" #845A3B
+
+" #754321
+" #434343
 " #120507
 
 " }}}1
 
-" Mode gui {{{2
+" Mode gui {{{1
 
 " Générique {{{2
 
 hi Normal			guifg=#5B3C11		guibg=black			gui=NONE
 hi Visual			guifg=black			guibg=#5B3C11		gui=NONE
 
+hi Italic			guifg=#5B3C11		guibg=black			gui=italic
 hi Underlined		guifg=#5B3C11		guibg=black			gui=underline
 
 hi Comment			guifg=#754321		guibg=black			gui=italic
@@ -44,6 +50,7 @@ hi Conceal			guifg=#5B3C11		guibg=black			gui=NONE
 hi LineNr			guifg=#5B3C11		guibg=NONE			gui=NONE
 
 hi Identifier		guifg=brown			guibg=black			gui=NONE
+hi Conditional		guifg=#872e30		guibg=black			gui=NONE
 hi Macro			guifg=#5B3C11		guibg=black			gui=NONE
 hi PreProc 			guifg=#5B3C11		guibg=black			gui=NONE
 
@@ -100,7 +107,7 @@ hi TabLineFill		guifg=NONE		guibg=#151515		gui=NONE
 " }}}2
 
 " Menu de complétion en mode insertion {{{2
-al
+
 hi Pmenu			guifg=#88421D		guibg=#070707		gui=NONE
 hi PmenuSbar		guifg=#88421D		guibg=#070707		gui=NONE
 hi PmenuSel			guifg=black			guibg=#5B3C11		gui=bold
@@ -205,10 +212,12 @@ hi HighlightedyankRegion		guifg=#921717		guibg=black			gui=NONE
 
 " }}}3
 
-" Multiple cursors {{{3
+" Visual multi {{{3
 
-highlight multiple_cursors_cursor gui=reverse
-highlight link multiple_cursors_visual Visual
+hi VisualMultiMono			guifg=black			guibg=#4a1c07		gui=bold
+hi VisualMultiExtend		guifg=darkgreen		guibg=#120705		gui=NONE
+hi VisualMultiExtendCursors	guifg=darkgreen		guibg=#120705		gui=italic,underline
+hi VisualMultiInsert		guifg=darkred		guibg=#120705		gui=italic,underline
 
 " }}}3
 
@@ -409,9 +418,9 @@ hi HighlightedyankRegion		ctermfg=darkred		ctermbg=NONE		cterm=NONE
 
 " }}}3
 
-" Multiple cursors {{{3
+" Visual multi {{{3
 
-highlight multiple_cursors_cursor term=reverse cterm=reverse
+
 
 " }}}3
 
