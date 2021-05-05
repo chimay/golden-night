@@ -3,7 +3,7 @@
 
 * Themes
 
-Minimalist themes for various apps.
+Minimalist golden night theme for various apps.
 
 Most are brown foreground on black background, with a few extra colors
 for syntax highlighting.
