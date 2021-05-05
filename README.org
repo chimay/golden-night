@@ -8,7 +8,7 @@ Minimalist golden night theme for various apps.
 It is a brown foreground on a black background, with a few extra
 colors for syntax highlighting.
 
-** Terminal
+* Terminal
 
 The terminal theme is inspired from [[https://github.com/chriskempson/base16-shell][Base16-shell]].
 
