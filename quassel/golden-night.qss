@@ -10,8 +10,8 @@ Palette
   midlight: #000000;
   mid: #341207;
   dark: #120705;
-  link: #7b3c11;
-  link-visited: #5b3c11;
+  link: #7b5c11;
+  link-visited: #7b3c11;
   marker-line: #872e30;
 }
 
@@ -27,6 +27,7 @@ ChatListItem[state="channel-event"] {
 }
 ChatListItem[state="highlighted"] {
 	foreground: #88421d;
+	background: #000000;
 }
 ChatListItem[state="unread-message"] {
 	foreground: #7b3c11;
@@ -37,7 +38,7 @@ ChatView {
 }
 
 ChatWidget {
-	background: #000000;
+	background: grey;
 }
 
 MultiLineEdit {
@@ -69,7 +70,7 @@ ChatLine::timestamp {
 
 ChatLine#plain { foreground: #5b3c11; }
 ChatLine#notice { foreground: #916409; }
-ChatLine#action { foreground: #04ff00; }
+ChatLine#action { foreground: #7b3c11; }
 ChatLine#nick { foreground: #916409; }
 
 ChatLine#join { foreground: #5b3c11; }
@@ -109,20 +110,20 @@ ChatLine#topic {
 }
 
 ChatLine#netsplit-join {
-	background: #131313;
 	foreground: #ff0000;
+	background: #131313;
 	font-weight: bold;
 }
 
 ChatLine#netsplit-quit {
-	background: #131313;
 	foreground: #ff0000;
+	background: #131313;
 	font-weight: bold;
 }
 
 ChatLine[label="highlight"] {
-  foreground: #872e30; font-weight: bold;
-  background: #001122;
+  foreground: #872e30;
+  background: #000000;
 }
 
 ChatLine::sender#plain[sender="self"] {
@@ -166,10 +167,23 @@ NickListItem[type="user", state="away"] {
 	font-style: italic;
 }
 
+QMenu
+{
+  color: #5b3c11;
+  background-color: #000000;
+}
+
+QMenu::item
+{
+  color: #872e30;
+  background-color: #000000;
+}
+
 QMenu::item:selected
 {
-  color: #872e90;
-  background-color: #000000;
+  color: #000000;
+  background-color: #872e30;
+  font-weight: bold;
 }
 
 QListView
@@ -190,8 +204,10 @@ QListView::item:selected
 QTableView {
 	color: #5b3c11;
 	foreground-color: #5b3c11;
-	selection-background-color: #341207;
 	background-color: #000000;
+	alternate-background-color: #000000;
+	selection-background-color: #341207;
+	border-width: 3 3 3 3;
 }
 
 QTreeView
@@ -201,6 +217,14 @@ QTreeView
   selection-color: #872e30;
   selection-background-color: #071205;
   color: #5b3c11;
+}
+
+QTreeView::branch {
+  background: #000000;
+}
+
+QTreeView::branch:selected {
+  background: #000000;
 }
 
 QTreeView::item:focus {
@@ -228,8 +252,13 @@ QTreeView::item:hover {
   background: #120705;
 }
 
+QCheckBox {
+  color: #9b3c11;
+  background-color: #000000;
+}
+
 QCheckBox::indicator {
-  color: #5b3c11;
+  color: #000000;
   background-color: #341207;
 }
 
@@ -240,7 +269,7 @@ QCheckBox::indicator:checked {
 
 QWidget {
     color: #5b3c11;
-	background: #000000;
+	// background: #000000;
 }
 
 /* ToolTip */
@@ -249,4 +278,3 @@ QToolTip {
     color: 972e30;
     background: #000000;
 }
-
